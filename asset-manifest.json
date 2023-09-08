@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/its_llc/static/css/main.e109e684.css",
+    "main.js": "/its_llc/static/js/main.7c918da3.js",
+    "static/media/truck_L.jpg": "/its_llc/static/media/truck_L.b54f42d42f8ac2e2ffc8.jpg",
+    "static/media/truck_M.jpg": "/its_llc/static/media/truck_M.e11795c6f660a682f465.jpg",
+    "index.html": "/its_llc/index.html",
+    "main.e109e684.css.map": "/its_llc/static/css/main.e109e684.css.map",
+    "main.7c918da3.js.map": "/its_llc/static/js/main.7c918da3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e109e684.css",
+    "static/js/main.7c918da3.js"
+  ]
+}
