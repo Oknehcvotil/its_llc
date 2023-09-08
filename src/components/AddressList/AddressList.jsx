@@ -1,16 +1,18 @@
-import { AddressLink, AddrList } from "./AddressList.styled";
+import { AddressLink, AddrList, Location } from './AddressList.styled';
+import { useTranslation } from 'react-i18next';
 
-const AddressList = () => {
-  const addresses = [
-    { link: "mailto:office@ua-its.com", textKey: "office@ua-its.com" },
-    { link: "tel:+380674455145", textKey: "+38 (067) 445-51-45" },
-  ];
+const AddressList = ({ addresses, footer }) => {
+  const { t } = useTranslation();
 
   return (
-    <AddrList>
-      {addresses.map((address, index) => (
+    <AddrList className={footer ? footer : ''}>
+      {addresses.map(({ link, textKey }, index) => (
         <li key={index}>
-          <AddressLink href={address.link}>{address.textKey}</AddressLink>
+          {link ? (
+            <AddressLink href={link}>{textKey}</AddressLink>
+          ) : (
+            <Location>{t(textKey)}</Location>
+          )}
         </li>
       ))}
     </AddrList>

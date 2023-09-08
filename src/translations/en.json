@@ -14,5 +14,6 @@
   "grainTrucks": "Self-dumping Grain Trucks",
   "tankerTruks": "Tanker Transportation",
   "tarpauTruks": "Tarpaulin Transportation",
-  "containerTruks": "Container Transportation"
+  "containerTruks": "Container Transportation",
+  "locationName": "Ukraine, Odesa"
 }

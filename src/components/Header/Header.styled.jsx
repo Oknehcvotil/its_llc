@@ -22,10 +22,10 @@ export const HeadCont = styled.div`
 export const HeadOptions = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 
   @media (min-width: 768px) {
-    gap: 20px;
+    gap: 30px;
   }
 `;
 
