@@ -12,6 +12,10 @@ export const AddrList = styled.ul`
   &.footer_adress_list {
     align-items: flex-start;
 
+    @media (min-width: 1200px) {
+      align-items: flex-start;
+    }
+
     /* :nth-of-type(1)::before {
       content: '';
       top: 0;
