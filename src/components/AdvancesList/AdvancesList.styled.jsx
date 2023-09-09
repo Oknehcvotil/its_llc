@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const AdvList = styled.ul`
   display: flex;
@@ -45,8 +45,15 @@ export const ImgCont = styled.div`
   border-radius: 50%;
   background-color: var(--secondary-background-color);
 
+  transform: scale(0);
+  transition: transform 800ms ease 0ms;
+
+  &.visible {
+    transform: scale(1);
+  }
+
   @media (min-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -55,4 +62,12 @@ export const AdvText = styled.p`
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 800ms ease-in-out 0ms, opacity 800ms ease-in-out 0ms;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 `;

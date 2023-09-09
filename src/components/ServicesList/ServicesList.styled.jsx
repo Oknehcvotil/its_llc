@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ServList = styled.ul`
   display: flex;
@@ -21,11 +21,14 @@ export const ServItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
 
-  .servImg {
-    @media (min-width: 768px) {
-      animation: fadeIn 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-    }
+export const ServImgCont = styled.div`
+  transform: scale(0);
+  transition: transform 800ms ease 0ms;
+
+  &.visible {
+    transform: scale(1);
   }
 `;
 

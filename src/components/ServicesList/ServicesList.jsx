@@ -1,29 +1,40 @@
-import SvgSelector from "../../helpers/SvgSelector";
-import { useTranslation } from "react-i18next";
-import TruckList from "../TruckList/TruckList";
-import { ServList, ServItem, ServTitles } from "./ServicesList.styled";
+import SvgSelector from '../../helpers/SvgSelector';
+import { useTranslation } from 'react-i18next';
+import TruckList from '../TruckList/TruckList';
+import {
+  ServList,
+  ServItem,
+  ServImgCont,
+  ServTitles,
+} from './ServicesList.styled';
+import { useInView } from 'react-intersection-observer';
 
 const ServicesList = () => {
   const { t } = useTranslation();
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0,
+  });
+
   const services = [
     {
-      id: "uaMap",
-      title: t("countryTransportation"),
+      id: 'uaMap',
+      title: t('countryTransportation'),
     },
     {
-      id: "world",
-      title: t("worldTransportation"),
+      id: 'world',
+      title: t('worldTransportation'),
     },
   ];
 
   return (
-    <ServList>
-      {services.map((service) => (
+    <ServList ref={ref}>
+      {services.map(service => (
         <ServItem key={service.id}>
-          <div className="servImg">
+          <ServImgCont className={`${inView ? 'visible' : ''}`}>
             <SvgSelector id={service.id} />
-          </div>
+          </ServImgCont>
           <ServTitles>{service.title}</ServTitles>
           <TruckList />
         </ServItem>

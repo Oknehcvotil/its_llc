@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const List = styled.ul`
   padding-left: 20px;
@@ -9,13 +9,27 @@ export const List = styled.ul`
 `;
 
 export const TruckItem = styled.li`
-  @media (min-width: 768px) {
-    animation: fadeLeft 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    transform: translateX(-200%);
 
-    :nth-of-type(even) {
-      animation: fadeRight 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    :nth-of-type(1) {
+      transition: transform 800ms ease-in-out 0ms;
     }
-  }
+
+    :nth-of-type(2) {
+      transition: transform 800ms ease-in-out 200ms;
+    }
+
+    :nth-of-type(3) {
+      transition: transform 800ms ease-in-out 400ms;
+    }
+
+    :nth-of-type(4) {
+      transition: transform 800ms ease-in-out 600ms;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
 `;
 
 export const TruckName = styled.p`
