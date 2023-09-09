@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import truck from '../../images/background/truck_L.jpg';
-import truckM from '../../images/background/truck_M.jpg';
-import truckS from '../../images/background/truck_S.jpg';
+import truck from '../../..//images/background/truck_L.jpg';
+import truckM from '../../../images/background/truck_M.jpg';
+import truckS from '../../../images/background/truck_S.jpg';
 
 export const Hero = styled.section`
   text-align: center;

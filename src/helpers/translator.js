@@ -6,12 +6,7 @@ import enTranslation from '../translations/en.json';
 
 const savedLanguage = JSON.parse(localStorage.getItem('persist:language'));
 
-const currentLanguage = () => {
-  if (savedLanguage.value && savedLanguage.value === '"en"') {
-    return 'en';
-  }
-  return 'ua';
-};
+const currentLanguage = () => (savedLanguage?.value === '"en"' ? 'en' : 'ua');
 
 i18n.use(initReactI18next).init({
   resources: {

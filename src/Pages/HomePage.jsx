@@ -1,6 +1,6 @@
-import AdvancesSection from '../components/AdvancesSection';
-import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ServicesSection';
+import AdvancesSection from '../components/HomePageComponents/AdvancesSection';
+import HeroSection from '../components/HomePageComponents/HeroSection';
+import ServicesSection from '../components/HomePageComponents/ServicesSection';
 
 const HomePage = () => {
   return (

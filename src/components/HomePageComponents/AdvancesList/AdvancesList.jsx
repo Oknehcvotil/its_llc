@@ -1,5 +1,5 @@
 import { AdvList, AdvItem, ImgCont, AdvText } from './AdvancesList.styled';
-import SvgSelector from '../../helpers/SvgSelector';
+import SvgSelector from '../../../helpers/SvgSelector';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 

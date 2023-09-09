@@ -1,4 +1,4 @@
-import SvgSelector from '../../helpers/SvgSelector';
+import SvgSelector from '../../../helpers/SvgSelector';
 import { useTranslation } from 'react-i18next';
 import TruckList from '../TruckList/TruckList';
 import {
