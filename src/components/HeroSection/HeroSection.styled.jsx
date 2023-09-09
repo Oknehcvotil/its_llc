@@ -6,7 +6,8 @@ import truckS from '../../images/background/truck_S.jpg';
 export const Hero = styled.section`
   text-align: center;
   margin: 0 auto;
-  padding-top: 112px;
+  padding-top: 72px;
+  padding-bottom: 40px;
   max-width: 1440px;
   min-height: 432px;
   background-image: linear-gradient(
@@ -25,7 +26,8 @@ export const Hero = styled.section`
       ),
       url(${truckM});
 
-    padding-top: 188px;
+    padding-top: 128px;
+    padding-bottom: 60px;
     min-height: 600px;
   }
 
@@ -35,9 +37,6 @@ export const Hero = styled.section`
         rgba(46, 47, 66, 0.7)
       ),
       url(${truck});
-
-    padding-top: 188px;
-    min-height: 600px;
   }
 `;
 
