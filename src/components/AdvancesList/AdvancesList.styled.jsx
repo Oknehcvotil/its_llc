@@ -46,7 +46,7 @@ export const ImgCont = styled.div`
   background-color: var(--secondary-background-color);
 
   transform: scale(0);
-  transition: transform 800ms ease 0ms;
+  transition: transform 500ms ease 0ms;
 
   &.visible {
     transform: scale(1);
@@ -62,12 +62,10 @@ export const AdvText = styled.p`
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: transform 800ms ease-in-out 0ms, opacity 800ms ease-in-out 0ms;
+  transform: translateY(100%);
+  transition: transform 1100ms ease 0ms;
 
   &.visible {
-    opacity: 1;
     transform: translateY(0);
   }
 `;
