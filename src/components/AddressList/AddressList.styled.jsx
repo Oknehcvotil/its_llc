@@ -54,14 +54,14 @@ export const AddressLink = styled.a`
 
 export const Location = styled.p`
   font-family: Calibri;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.3;
   color: var(--main-color);
   letter-spacing: 0.04em;
   transition: color var(--transition);
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
