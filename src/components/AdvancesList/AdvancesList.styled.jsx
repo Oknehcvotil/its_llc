@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 export const AdvList = styled.ul`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
   list-style: none;
@@ -12,7 +12,6 @@ export const AdvList = styled.ul`
   overflow: hidden;
 
   @media (min-width: 768px) {
-    flex-direction: row;
     gap: 0;
     justify-content: space-around;
   }
