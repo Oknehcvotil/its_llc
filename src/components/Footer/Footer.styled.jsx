@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const FooterCont = styled.div`
   background-color: var(--head-bcg);
-  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;

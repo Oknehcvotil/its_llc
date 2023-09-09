@@ -14,6 +14,7 @@ export const AddrList = styled.ul`
 
     @media (min-width: 1200px) {
       align-items: flex-start;
+      flex-direction: column;
     }
 
     /* :nth-of-type(1)::before {
@@ -33,7 +34,7 @@ export const AddrList = styled.ul`
 
 export const AddressLink = styled.a`
   font-family: Calibri;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.3;
   color: var(--main-color);
   letter-spacing: 0.04em;
@@ -45,7 +46,7 @@ export const AddressLink = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
