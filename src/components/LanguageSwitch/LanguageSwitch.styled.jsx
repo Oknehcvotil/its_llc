@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
-import uaFlag from "../../images/flags/ukraine-flag.png";
-import uaFlagGrey from "../../images/flags/ukraine-flag-grey.png";
-import enFlag from "../../images/flags/england-flag.png";
-import enFlagGrey from "../../images/flags/england-flag-grey.png";
+import styled from '@emotion/styled';
+import uaFlag from '../../images/flags/ukraine-flag.png';
+import uaFlagGrey from '../../images/flags/ukraine-flag-grey.png';
+import enFlag from '../../images/flags/england-flag.png';
+import enFlagGrey from '../../images/flags/england-flag-grey.png';
 
 export const LanguageCont = styled.div`
   display: flex;
@@ -19,6 +19,12 @@ export const UaBtn = styled.button`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 300ms ease-in-out;
+
+  :hover,
+  :focus {
+    transform: scale(1.2);
+  }
 
   :hover,
   :focus,
@@ -35,6 +41,12 @@ export const EnBtn = styled.button`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 300ms ease-in-out;
+
+  :hover,
+  :focus {
+    transform: scale(1.2);
+  }
 
   :hover,
   :focus,
