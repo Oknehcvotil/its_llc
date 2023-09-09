@@ -1,14 +1,14 @@
-import Footer from './Footer/Footer';
-import Header from './Header';
-import Main from './Main';
-
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Layout/Layout';
+import HomePage from 'Pages/HomePage';
 const App = () => {
+
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+      </Route>
+    </Routes>
   );
 };
 

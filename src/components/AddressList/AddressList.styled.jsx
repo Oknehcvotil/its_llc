@@ -46,7 +46,7 @@ export const AddressLink = styled.a`
   }
 
   @media (min-width: 768px) {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
@@ -61,7 +61,7 @@ export const Location = styled.p`
   transition: color var(--transition);
 
   @media (min-width: 768px) {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
