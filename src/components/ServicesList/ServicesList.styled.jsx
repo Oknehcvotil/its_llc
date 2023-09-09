@@ -4,7 +4,7 @@ export const ServList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 72px;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -13,7 +13,6 @@ export const ServList = styled.ul`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 0;
     justify-content: space-around;
   }
 `;

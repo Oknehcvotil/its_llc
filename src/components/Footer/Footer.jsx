@@ -2,7 +2,7 @@ import AddressList from 'components/AddressList/AddressList';
 import logo from '../../images/logo/ITS_b.png';
 import logoSmall from '../../images/logo/ITS.png';
 import useResize from '../../hooks/useResize';
-import { FooterCont } from './Footer.styled';
+import { Foot, FooterCont } from './Footer.styled';
 
 const Footer = () => {
   const addresses = [
@@ -15,7 +15,7 @@ const Footer = () => {
   const isMobile = windowSize.width < 768;
 
   return (
-    <footer>
+    <Foot>
       <FooterCont>
         <a href="/">
           <img
@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
         <AddressList addresses={addresses} footer={'footer_adress_list'} />
       </FooterCont>
-    </footer>
+    </Foot>
   );
 };
 

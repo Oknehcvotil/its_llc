@@ -1,12 +1,14 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
+
+export const Head = styled.header`
+  background-color: var(--head-bcg);
+`;
 
 export const HeadCont = styled.div`
-  background-color: var(--head-bcg);
-  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0 auto;
   max-width: 426px;
 

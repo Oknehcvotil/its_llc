@@ -1,17 +1,13 @@
 import styled from "@emotion/styled";
 
 export const AdvSect = styled.section`
-  padding: 40px 0;
-
-  @media (min-width: 768px) {
-    padding: 80px 0;
-  }
+  padding: 96px 0;
 `;
 
 export const AdvCont = styled.div`
   margin: 0 auto;
   max-width: 426px;
-  padding: 0 10px;
+  padding: 0 15px;
 
   @media (min-width: 768px) {
     max-width: 766px;
@@ -28,14 +24,10 @@ export const AdvTitle = styled.h2`
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--secondary-color);
 
-  @media (min-width: 768px) {
-    margin-bottom: 20px;
-  }
-
   @media (min-width: 1200px) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;

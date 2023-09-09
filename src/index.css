@@ -7,7 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
 
 code {
@@ -65,6 +64,12 @@ code {
     transform: translateX(0);
   }
 }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
 
 h1,
 h2,

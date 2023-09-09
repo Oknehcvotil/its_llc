@@ -1,15 +1,14 @@
-import styled from "@emotion/styled";
-import truck from "../../images/truck_L.jpg";
-import truckM from "../../images/truck_M.jpg";
-import truckS from "../../images/truck_M.jpg";
+import styled from '@emotion/styled';
+import truck from '../../images/background/truck_L.jpg';
+import truckM from '../../images/background/truck_M.jpg';
+import truckS from '../../images/background/truck_S.jpg';
 
 export const Hero = styled.section`
   text-align: center;
   margin: 0 auto;
-  padding: 60px 10px 20px;
-  max-width: 426px;
-  min-height: 400px;
-
+  padding-top: 112px;
+  max-width: 1440px;
+  min-height: 432px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -25,7 +24,9 @@ export const Hero = styled.section`
         rgba(46, 47, 66, 0.7)
       ),
       url(${truckM});
-    max-width: 766px;
+
+    padding-top: 188px;
+    min-height: 600px;
   }
 
   @media (min-width: 1200px) {
@@ -34,14 +35,16 @@ export const Hero = styled.section`
         rgba(46, 47, 66, 0.7)
       ),
       url(${truck});
-    padding: 70px 10px 40px;
-    max-width: 1158px;
+
+    padding-top: 188px;
+    min-height: 600px;
   }
 `;
 
 export const HeroCont = styled.div`
   max-width: 426px;
   margin: 0 auto;
+  padding: 0 15px;
 
   @media (min-width: 768px) {
     max-width: 766px;

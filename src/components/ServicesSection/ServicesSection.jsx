@@ -1,18 +1,18 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
-import {  ServCont, ServTitle } from "./ServicesSection.styled";
-import ServicesList from "../ServicesList/ServicesList";
+import { ServSect, ServCont, ServTitle } from './ServicesSection.styled';
+import ServicesList from '../ServicesList/ServicesList';
 
 const ServicesSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <ServSect>
       <ServCont>
-        <ServTitle>{t("servicesTitle")}</ServTitle>
+        <ServTitle>{t('servicesTitle')}</ServTitle>
         <ServicesList />
       </ServCont>
-    </section>
+    </ServSect>
   );
 };
 

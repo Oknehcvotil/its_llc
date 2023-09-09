@@ -1,6 +1,6 @@
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 import logo from '../../images/logo/ITS_no_tag.png';
-import { HeadCont, HeadOptions, LogoLink } from './Header.styled';
+import { Head, HeadCont, HeadOptions, LogoLink } from './Header.styled';
 import AddressList from '../AddressList/AddressList';
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
   ];
 
   return (
-    <header>
+    <Head>
       <HeadCont>
         <LogoLink href="/">
           <img src={logo} alt="Import Transit Service LLC" />
@@ -22,7 +22,7 @@ const Header = () => {
           <LanguageSwitch />
         </HeadOptions>
       </HeadCont>
-    </header>
+    </Head>
   );
 };
 
