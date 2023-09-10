@@ -12,19 +12,19 @@ export const TruckItem = styled.li`
   transform: translateX(-200%);
 
   :nth-of-type(1) {
-    transition: transform 800ms ease-in 0ms;
+    transition: transform 800ms ease-in-out 0ms;
   }
 
   :nth-of-type(2) {
-    transition: transform 800ms ease-in 200ms;
+    transition: transform 800ms ease-in-out 200ms;
   }
 
   :nth-of-type(3) {
-    transition: transform 800ms ease-in 400ms;
+    transition: transform 800ms ease-in-out 400ms;
   }
 
   :nth-of-type(4) {
-    transition: transform 800ms ease-in 600ms;
+    transition: transform 800ms ease-in-out 600ms;
   }
 
   &.active {
