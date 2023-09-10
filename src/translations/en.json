@@ -15,5 +15,11 @@
   "tankerTruks": "Tanker Transportation",
   "tarpauTruks": "Tarpaulin Transportation",
   "containerTruks": "Container Transportation",
-  "locationName": "Odesa, Ukraine"
+  "locationName": "Odesa, Ukraine",
+  "fleetTitle": "Our Fleet",
+  "characteristics": "Characteristics",
+  "capacity": "Cargo capacity: 5555555",
+  "weight": "Maximum allowable weight: 5555555",
+  "cargo": "Cargo category: grain",
+  "axle": "Number of axles: 3"
 }

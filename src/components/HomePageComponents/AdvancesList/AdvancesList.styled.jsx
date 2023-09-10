@@ -63,6 +63,7 @@ export const AdvText = styled.p`
   letter-spacing: 0.02em;
   transform: translateY(100%);
   transition: transform 1100ms ease 0ms;
+  text-align: center;
 
   &.visible {
     transform: translateY(0);

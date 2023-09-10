@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Head>
       <HeadCont>
-        <LogoLink href="/">
+        <LogoLink to="/">
           <img src={logo} alt="Import Transit Service LLC" />
         </LogoLink>
         <HeadOptions>

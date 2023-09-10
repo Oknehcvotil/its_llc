@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const Head = styled.header`
   background-color: var(--head-bcg);
@@ -31,7 +32,7 @@ export const HeadOptions = styled.div`
   }
 `;
 
-export const LogoLink = styled.a`
+export const LogoLink = styled(Link)`
   transition: transform var(--transition);
 
   :hover,
