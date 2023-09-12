@@ -13,7 +13,13 @@ const Header = () => {
     <Head>
       <HeadCont>
         <LogoLink to="/">
-          <img src={logo} alt="Import Transit Service LLC" />
+          <img
+            src={logo}
+            width="84"
+            height="51"
+            loading="lazy"
+            alt="Import Transit Service LLC"
+          />
         </LogoLink>
         <HeadOptions>
           <address>

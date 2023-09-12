@@ -55,13 +55,14 @@ export const HeroCont = styled.div`
 `;
 
 export const Tagline = styled.h1`
-  font-family: Calibri;
+  font-family: 'Calibri', sans-serif;
   line-height: 1.3;
   color: var(--secondary-color);
+  font-weight: 400;
   letter-spacing: 0.5em;
   text-align: center;
   opacity: 0;
-  font-size: 36px;
+  font-size: 44px;
   margin-bottom: 40px;
   animation: fadeIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 
