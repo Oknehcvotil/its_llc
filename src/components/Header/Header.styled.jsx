@@ -33,7 +33,7 @@ export const HeadOptions = styled.div`
 `;
 
 export const LogoLink = styled(Link)`
-  transition: transform var(--transition);
+  transition: transform 500ms ease;
 
   :hover,
   :focus {

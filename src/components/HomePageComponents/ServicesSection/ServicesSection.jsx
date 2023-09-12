@@ -10,6 +10,7 @@ const ServicesSection = () => {
     <ServSect>
       <ServCont>
         <ServTitle>{t('servicesTitle')}</ServTitle>
+        
         <ServicesList />
       </ServCont>
     </ServSect>

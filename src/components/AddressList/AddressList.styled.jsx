@@ -33,8 +33,9 @@ export const AddrList = styled.ul`
 `;
 
 export const AddressLink = styled.a`
-  font-family: Calibri;
-  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
   line-height: 1.3;
   color: var(--main-color);
   letter-spacing: 0.04em;
@@ -42,7 +43,7 @@ export const AddressLink = styled.a`
 
   :hover,
   :focus {
-    color: var(--accent-color);
+    color: var(--secondary-color);
   }
 
   @media (min-width: 768px) {
@@ -53,8 +54,9 @@ export const AddressLink = styled.a`
 `;
 
 export const Location = styled.p`
-  font-family: Calibri;
-  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
   line-height: 1.3;
   color: var(--main-color);
   letter-spacing: 0.04em;

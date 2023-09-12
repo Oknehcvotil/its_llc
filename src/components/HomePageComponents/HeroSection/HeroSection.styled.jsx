@@ -64,25 +64,21 @@ export const Tagline = styled.h1`
   opacity: 0;
   font-size: 44px;
   margin-bottom: 40px;
-  animation: fadeIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation: fadeIn 800ms ease forwards;
 
   @media (min-width: 768px) {
     margin-bottom: 60px;
   }
 `;
 
-export const AboutTitle = styled.h5`
-  color: var(--title-text-color);
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-`;
-
 export const AboutText = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  animation: fadeInText 1200ms ease forwards;
 `;
 
 export const CompName = styled.strong`

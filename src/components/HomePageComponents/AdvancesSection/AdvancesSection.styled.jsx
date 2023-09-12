@@ -19,7 +19,7 @@ export const AdvCont = styled.div`
 `;
 
 export const AdvTitle = styled.h2`
-  font-family: Calibri;
+  font-family: 'DM Sans', sans-serif;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -28,6 +28,6 @@ export const AdvTitle = styled.h2`
   color: var(--secondary-color);
 
   @media (min-width: 1200px) {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 `;

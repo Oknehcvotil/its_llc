@@ -10,6 +10,7 @@ export const ServCont = styled.div`
   padding: 0 15px;
   max-width: 426px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: 768px) {
     max-width: 766px;
@@ -21,7 +22,7 @@ export const ServCont = styled.div`
 `;
 
 export const ServTitle = styled.h2`
-  font-family: Calibri;
+  font-family: 'DM Sans', sans-serif;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;

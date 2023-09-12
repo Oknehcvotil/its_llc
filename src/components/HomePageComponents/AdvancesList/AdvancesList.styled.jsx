@@ -14,6 +14,7 @@ export const AdvList = styled.ul`
   @media (min-width: 768px) {
     gap: 0;
     justify-content: space-around;
+    align-items: baseline;
   }
 `;
 
@@ -22,16 +23,6 @@ export const AdvItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (min-width: 768px) {
-    :nth-of-type(-n + 2) {
-      animation: fadeLeft 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-    }
-
-    :nth-last-of-type(-n + 2) {
-      animation: fadeRight 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-    }
-  }
 `;
 
 export const ImgCont = styled.div`
@@ -57,7 +48,9 @@ export const ImgCont = styled.div`
 `;
 
 export const AdvText = styled.p`
-  color: var(--title-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;

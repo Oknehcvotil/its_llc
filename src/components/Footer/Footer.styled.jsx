@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const Foot = styled.footer`
   background-color: var(--head-bcg);
@@ -10,7 +11,6 @@ export const Foot = styled.footer`
 `;
 
 export const FooterCont = styled.div`
- 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,5 +25,39 @@ export const FooterCont = styled.div`
   @media (min-width: 1200px) {
     max-width: 1158px;
     padding: 70px 10px;
+  }
+`;
+
+export const LogoLink = styled(Link)`
+  transition: transform var(--transition);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 500ms ease;
+
+  :hover,
+  :focus {
+    transform: scale(1.05);
+  }
+`;
+
+export const LogPicture = styled.picture`
+  margin-bottom: 3px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
+  }
+`;
+
+export const Tag = styled.p`
+  font-family: 'Calibri', sans-serif;
+  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 0.45em;
+  text-align: center;
+  font-size: 5px;
+
+  @media (min-width: 768px) {
+    font-size: 10px;
   }
 `;

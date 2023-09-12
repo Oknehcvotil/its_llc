@@ -1,9 +1,7 @@
 import AddressList from 'components/AddressList/AddressList';
-import logo from '../../images/logo/ITS_b.png';
-import logoSmall from '../../images/logo/ITS.png';
 import useResize from '../../hooks/useResize';
-import { Foot, FooterCont } from './Footer.styled';
-import { Link } from 'react-router-dom';
+import { Foot, FooterCont, LogoLink, LogPicture, Tag } from './Footer.styled';
+import logo from '../../images/logo/logo.svg';
 
 const Footer = () => {
   const addresses = [
@@ -18,12 +16,18 @@ const Footer = () => {
   return (
     <Foot>
       <FooterCont>
-        <Link to="/">
-          <img
-            src={isMobile ? logoSmall : logo}
-            alt="Import Transit Service LLC"
-          />
-        </Link>
+        <LogoLink to="/">
+          <LogPicture>
+            <img
+              src={logo}
+              width={isMobile ? 84 : 168}
+              height={isMobile ? 51 : 102}
+              loading="lazy"
+              alt="Import Transit Service LLC"
+            />
+          </LogPicture>
+          <Tag>CARRY ON CARRY ALL</Tag>
+        </LogoLink>
         <AddressList addresses={addresses} footer={'footer_adress_list'} />
       </FooterCont>
     </Foot>
