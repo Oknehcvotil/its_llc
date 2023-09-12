@@ -254,6 +254,26 @@ const SvgSelector = ({ id }) => {
           </g>
         </svg>
       );
+    case 'logo':
+      return (
+        <svg
+          width="84"
+          height="51"
+          viewBox="0 0 84 51"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M45 0H39L45 7V0Z" fill="#EA725D" />
+          <rect width="9" height="51" fill="#ADB8BA" />
+          <rect x="28" width="9" height="51" fill="#ADB8BA" />
+          <rect x="15" width="13" height="9" fill="#ADB8BA" />
+          <path
+            d="M54 35.75C54 49.4167 79 49.4167 79 35.75C79 31.1944 74.8333 27.7778 66.5 25.5C58.1667 23.2222 54 19.8056 54 15.25C54 1.58333 79 1.58333 79 15.25"
+            stroke="#ADB8BA"
+            stroke-width="9"
+          />
+        </svg>
+      );
     default:
       return;
   }

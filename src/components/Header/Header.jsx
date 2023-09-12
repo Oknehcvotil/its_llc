@@ -1,5 +1,5 @@
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
-import logo from '../../images/logo/ITS_no_tag.png';
+import logo from '../../images/logo/logo.svg';
 import { Head, HeadCont, HeadOptions, LogoLink } from './Header.styled';
 import AddressList from '../AddressList/AddressList';
 
