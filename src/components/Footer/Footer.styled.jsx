@@ -33,12 +33,12 @@ export const LogoLink = styled(Link)`
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: transform 500ms ease;
+  /* transition: transform 500ms ease;
 
   :hover,
   :focus {
     transform: scale(1.05);
-  }
+  } */
 `;
 
 export const LogPicture = styled.picture`
