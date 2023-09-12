@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/its_llc/static/css/main.9e973f67.css",
-    "main.js": "/its_llc/static/js/main.d4b8720c.js",
-    "static/media/photo.jpg": "/its_llc/static/media/photo.dbf55bc9b5c9a3a8628e.jpg",
+    "main.js": "/its_llc/static/js/main.fe343327.js",
     "static/media/truck_L.jpg": "/its_llc/static/media/truck_L.38aa79f10dceb847df22.jpg",
     "static/media/truck_M.jpg": "/its_llc/static/media/truck_M.feefd47a92f32b4d344e.jpg",
     "static/media/truck_S.jpg": "/its_llc/static/media/truck_S.22dfd4f84192686efaaf.jpg",
@@ -12,11 +11,12 @@
     "static/media/slick.ttf": "/its_llc/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/its_llc/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/its_llc/index.html",
+    "static/media/logo.svg": "/its_llc/static/media/logo.3bbdf9c0052a5422d98393c51452971c.svg",
     "main.9e973f67.css.map": "/its_llc/static/css/main.9e973f67.css.map",
-    "main.d4b8720c.js.map": "/its_llc/static/js/main.d4b8720c.js.map"
+    "main.fe343327.js.map": "/its_llc/static/js/main.fe343327.js.map"
   },
   "entrypoints": [
     "static/css/main.9e973f67.css",
-    "static/js/main.d4b8720c.js"
+    "static/js/main.fe343327.js"
   ]
 }
