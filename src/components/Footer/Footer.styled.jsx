@@ -53,11 +53,12 @@ export const Tag = styled.p`
   font-family: 'Calibri', sans-serif;
   color: var(--secondary-color);
   font-weight: 400;
-  letter-spacing: 0.45em;
+  letter-spacing: 2.25px;
   text-align: center;
   font-size: 5px;
 
   @media (min-width: 768px) {
     font-size: 10px;
+    letter-spacing: 4.5px;
   }
 `;
