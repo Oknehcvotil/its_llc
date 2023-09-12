@@ -34,6 +34,11 @@ export const LogoLink = styled(Link)`
   align-items: center;
   flex-direction: column;
   transition: transform 500ms ease;
+  max-width: 84px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 168px;
+  }
 
   :hover,
   :focus {
