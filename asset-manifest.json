@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/its_llc/static/css/main.e7edd6dd.css",
-    "main.js": "/its_llc/static/js/main.1865b580.js",
+    "main.js": "/its_llc/static/js/main.d2779ffa.js",
     "static/media/calibri.ttf": "/its_llc/static/media/calibri.2eb4a8e3e62e2d790880.ttf",
     "static/media/calibri_bold.ttf": "/its_llc/static/media/calibri_bold.952f1ae64afe47a25173.ttf",
     "static/media/truck_L.jpg": "/its_llc/static/media/truck_L.38aa79f10dceb847df22.jpg",
@@ -14,10 +14,10 @@
     "index.html": "/its_llc/index.html",
     "static/media/logo.svg": "/its_llc/static/media/logo.14e7b2be9781531e17bddd07d88fced8.svg",
     "main.e7edd6dd.css.map": "/its_llc/static/css/main.e7edd6dd.css.map",
-    "main.1865b580.js.map": "/its_llc/static/js/main.1865b580.js.map"
+    "main.d2779ffa.js.map": "/its_llc/static/js/main.d2779ffa.js.map"
   },
   "entrypoints": [
     "static/css/main.e7edd6dd.css",
-    "static/js/main.1865b580.js"
+    "static/js/main.d2779ffa.js"
   ]
 }
