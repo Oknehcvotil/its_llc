@@ -1,7 +1,7 @@
 import AddressList from 'components/AddressList/AddressList';
 import useResize from '../../hooks/useResize';
-import { Foot, FooterCont, LogoLink, LogPicture, Tag } from './Footer.styled';
-import logo from '../../images/logo/logo.svg';
+import { Foot, FooterCont, LogoLink, LogPicture } from './Footer.styled';
+import logo from '../../images/logo/logo_main.svg';
 
 const Footer = () => {
   const addresses = [
@@ -26,7 +26,7 @@ const Footer = () => {
               alt="Import Transit Service LLC"
             />
           </LogPicture>
-          <Tag>CARRY ON CARRY ALL</Tag>
+          {/* <Tag>CARRY ON CARRY ALL</Tag> */}
         </LogoLink>
         <AddressList addresses={addresses} footer={'footer_adress_list'} />
       </FooterCont>
