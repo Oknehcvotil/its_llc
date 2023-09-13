@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/its_llc/static/css/main.e7edd6dd.css",
-    "main.js": "/its_llc/static/js/main.682d97f2.js",
+    "main.js": "/its_llc/static/js/main.33db210f.js",
     "static/media/calibri.ttf": "/its_llc/static/media/calibri.2eb4a8e3e62e2d790880.ttf",
     "static/media/calibri_bold.ttf": "/its_llc/static/media/calibri_bold.952f1ae64afe47a25173.ttf",
     "static/media/truck_L.jpg": "/its_llc/static/media/truck_L.38aa79f10dceb847df22.jpg",
     "static/media/truck_M.jpg": "/its_llc/static/media/truck_M.feefd47a92f32b4d344e.jpg",
     "static/media/truck_S.jpg": "/its_llc/static/media/truck_S.22dfd4f84192686efaaf.jpg",
+    "static/media/logo_main.svg": "/its_llc/static/media/logo_main.16c6ea2e81a55395118897a78a620420.svg",
     "static/media/slick.svg": "/its_llc/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/its_llc/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/its_llc/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -14,10 +15,10 @@
     "index.html": "/its_llc/index.html",
     "static/media/logo.svg": "/its_llc/static/media/logo.0307ed702cb387d3e5cffb48a1aa776f.svg",
     "main.e7edd6dd.css.map": "/its_llc/static/css/main.e7edd6dd.css.map",
-    "main.682d97f2.js.map": "/its_llc/static/js/main.682d97f2.js.map"
+    "main.33db210f.js.map": "/its_llc/static/js/main.33db210f.js.map"
   },
   "entrypoints": [
     "static/css/main.e7edd6dd.css",
-    "static/js/main.682d97f2.js"
+    "static/js/main.33db210f.js"
   ]
 }
