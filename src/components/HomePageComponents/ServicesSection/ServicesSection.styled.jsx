@@ -22,19 +22,19 @@ export const ServCont = styled.div`
 `;
 
 export const ServTitle = styled.h2`
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--secondary-color);
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 `;

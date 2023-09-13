@@ -72,8 +72,7 @@ export const Tagline = styled.h1`
 `;
 
 export const AboutText = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.5;

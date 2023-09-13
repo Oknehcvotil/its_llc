@@ -48,8 +48,8 @@ export const ImgCont = styled.div`
 `;
 
 export const AdvText = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.5;

@@ -8,6 +8,7 @@ export const AddrList = styled.ul`
   padding: 0;
   margin: 0;
   justify-content: space-between;
+  font-style: normal;
 
   &.footer_adress_list {
     align-items: flex-start;
@@ -16,14 +17,6 @@ export const AddrList = styled.ul`
       align-items: flex-start;
       flex-direction: column;
     }
-
-    /* :nth-of-type(1)::before {
-      content: '';
-      top: 0;
-      left: 0;
-      width: 24px;
-      height: 24px;
-    } */
   }
 
   @media (min-width: 1200px) {
@@ -33,7 +26,7 @@ export const AddrList = styled.ul`
 `;
 
 export const AddressLink = styled.a`
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.3;
@@ -54,7 +47,7 @@ export const AddressLink = styled.a`
 `;
 
 export const Location = styled.p`
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.3;
