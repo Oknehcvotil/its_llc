@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/its_llc/static/css/main.68d69d48.css",
-    "main.js": "/its_llc/static/js/main.93915e3e.js",
+    "main.js": "/its_llc/static/js/main.4fcfd5df.js",
     "static/media/Caveat-VariableFont_wght.ttf": "/its_llc/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/truck_L.jpg": "/its_llc/static/media/truck_L.38aa79f10dceb847df22.jpg",
     "static/media/truck_M.jpg": "/its_llc/static/media/truck_M.feefd47a92f32b4d344e.jpg",
@@ -18,10 +18,10 @@
     "index.html": "/its_llc/index.html",
     "static/media/logo.svg": "/its_llc/static/media/logo.0307ed702cb387d3e5cffb48a1aa776f.svg",
     "main.68d69d48.css.map": "/its_llc/static/css/main.68d69d48.css.map",
-    "main.93915e3e.js.map": "/its_llc/static/js/main.93915e3e.js.map"
+    "main.4fcfd5df.js.map": "/its_llc/static/js/main.4fcfd5df.js.map"
   },
   "entrypoints": [
     "static/css/main.68d69d48.css",
-    "static/js/main.93915e3e.js"
+    "static/js/main.4fcfd5df.js"
   ]
 }
