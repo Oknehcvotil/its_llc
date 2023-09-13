@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const AdvList = styled.ul`
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
@@ -14,7 +14,6 @@ export const AdvList = styled.ul`
   @media (min-width: 768px) {
     gap: 0;
     justify-content: space-around;
-    align-items: baseline;
   }
 `;
 
