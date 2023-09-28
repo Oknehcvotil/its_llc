@@ -47,7 +47,6 @@ export const ImgCont = styled.div`
 `;
 
 export const AdvText = styled.p`
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: var(--secondary-color);
   font-size: 16px;

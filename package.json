@@ -5,6 +5,7 @@
   "homepage": "https://Oknehcvotil.github.io/its_llc/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
+    "@fontsource/montserrat": "^5.0.8",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

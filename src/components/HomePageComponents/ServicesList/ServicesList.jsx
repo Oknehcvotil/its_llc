@@ -12,8 +12,8 @@ import {
   ContactsLink,
 } from './ServicesList.styled';
 import { useInView } from 'react-intersection-observer';
-import grain from '../../../images/serviceImages/grain.svg';
-import container from '../../../images/serviceImages/container.svg';
+import grain from '../../../images/serviceImages/tipper-truck.svg';
+import container from '../../../images/serviceImages/container-truck.svg';
 import fuelTruck from '../../../images/serviceImages/fuel_truck.svg';
 import tiltTruck from '../../../images/serviceImages/tilt_truck.svg';
 

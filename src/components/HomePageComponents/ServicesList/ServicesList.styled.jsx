@@ -106,7 +106,6 @@ export const ServImgCont = styled.div`
 
 export const ServTitles = styled.p`
   color: var(--accent-background-color);
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;

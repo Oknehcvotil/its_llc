@@ -19,7 +19,6 @@ export const AdvCont = styled.div`
 `;
 
 export const AdvTitle = styled.h2`
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1;

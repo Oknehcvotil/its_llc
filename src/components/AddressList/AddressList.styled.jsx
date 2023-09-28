@@ -26,7 +26,6 @@ export const AddrList = styled.ul`
 `;
 
 export const AddressLink = styled.a`
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.3;
@@ -47,7 +46,6 @@ export const AddressLink = styled.a`
 `;
 
 export const Location = styled.p`
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.3;

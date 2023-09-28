@@ -4,7 +4,6 @@ export const List = styled.ul`
   padding-left: 20px;
   margin: 0 auto 20px;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--secondary-color);
 
@@ -55,7 +54,6 @@ export const TruckItem = styled.li`
 `;
 
 export const TruckName = styled.p`
-  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: var(--main-color);
   font-size: 16px;
