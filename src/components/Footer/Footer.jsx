@@ -3,6 +3,7 @@ import useResize from '../../hooks/useResize';
 import { Foot, FooterCont } from './Footer.styled';
 import logo from '../../images/logo/logo_main.svg';
 import { Link } from 'react-router-dom';
+import sprite from '../../images/icons/svg-sprite.svg';
 
 const Footer = () => {
   const addresses = [
@@ -18,15 +19,9 @@ const Footer = () => {
     <Foot>
       <FooterCont>
         <Link to="/">
-          <picture>
-            <img
-              src={logo}
-              width={isMobile ? 84 : 168}
-              height={isMobile ? 51 : 102}
-              loading="lazy"
-              alt="Import Transit Service LLC"
-            />
-          </picture>
+          <svg width={isMobile ? 84 : 168} height={isMobile ? 51 : 102}>
+            <use href={sprite + '#icon-logo-main'} />
+          </svg>
         </Link>
         <AddressList addresses={addresses} footer={'footer_adress_list'} />
       </FooterCont>

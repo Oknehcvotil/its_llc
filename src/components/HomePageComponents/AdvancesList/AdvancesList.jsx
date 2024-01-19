@@ -1,7 +1,7 @@
 import { AdvList, AdvItem, ImgCont, AdvText } from './AdvancesList.styled';
-import SvgSelector from '../../../helpers/SvgSelector';
 import { useTranslation } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
+import sprite from '../../../images/icons/svg-sprite.svg';
 
 const AdvancesList = () => {
   const { t } = useTranslation();
@@ -12,10 +12,10 @@ const AdvancesList = () => {
   });
 
   const advantages = [
-    { id: 'truck', textKey: 'advCarPark' },
-    { id: 'punctualityClock', textKey: 'advPunctuality' },
-    { id: 'handshake', textKey: 'advPartners' },
-    { id: 'fullWeek', textKey: 'advControl' },
+    { id: '#icon-small-truck', textKey: 'advCarPark' },
+    { id: '#icon-punctualityClock', textKey: 'advPunctuality' },
+    { id: '#icon-handshake', textKey: 'advPartners' },
+    { id: '#icon-fullWeek', textKey: 'advControl' },
   ];
 
   return (
@@ -23,7 +23,9 @@ const AdvancesList = () => {
       {advantages.map((advantage, index) => (
         <AdvItem key={index}>
           <ImgCont className={`${inView ? 'visible' : ''}`}>
-            {advantage.id && <SvgSelector id={advantage.id} />}
+            <svg width="64" height="64">
+              {advantage.id && <use href={sprite + advantage.id} />}
+            </svg>
           </ImgCont>
           <AdvText className={`${inView ? 'visible' : ''}`}>
             {t(advantage.textKey)}

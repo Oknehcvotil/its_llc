@@ -1,21 +1,15 @@
-// import SvgSelector from '../../../helpers/SvgSelector';
 import { useTranslation } from 'react-i18next';
-// import TruckList from '../TruckList/TruckList';
 import {
   ServList,
   ServItem,
   ServImgCont,
   ServTitles,
-  ServListCont,
   ContactsList,
   ContactsItem,
   ContactsLink,
 } from './ServicesList.styled';
 import { useInView } from 'react-intersection-observer';
-import grain from '../../../images/serviceImages/tipper-truck.svg';
-import container from '../../../images/serviceImages/container-truck.svg';
-import fuelTruck from '../../../images/serviceImages/fuel_truck.svg';
-import tiltTruck from '../../../images/serviceImages/tilt_truck.svg';
+import sprite from '../../../images/icons/svg-sprite.svg';
 
 const ServicesList = () => {
   const { t } = useTranslation();
@@ -27,7 +21,18 @@ const ServicesList = () => {
 
   const services = [
     {
-      img: grain,
+      img: '#icon-ref',
+      alt: 'refrigerator',
+      title: t('refrigeratorTransportation'),
+      contacts: [
+        {
+          telLink: 'tel:+380679667453',
+          telNumb: '+38 (067) 966-74-53',
+        },
+      ],
+    },
+    {
+      img: '#icon-tipper-truck',
       alt: 'grain',
       title: t('grainTransportation'),
       contacts: [
@@ -38,7 +43,7 @@ const ServicesList = () => {
       ],
     },
     {
-      img: fuelTruck,
+      img: '#icon-fuel_truck',
       alt: 'Fuel Truck',
       title: t('tankTransportation'),
       contacts: [
@@ -53,7 +58,7 @@ const ServicesList = () => {
       ],
     },
     {
-      img: container,
+      img: '#icon-container-truck',
       alt: 'container',
       title: t('containerTransportation'),
       contacts: [
@@ -68,7 +73,7 @@ const ServicesList = () => {
       ],
     },
     {
-      img: tiltTruck,
+      img: '#icon-tilt_truck',
       alt: 'Tilt Truck',
       title: t('tiltTransportation'),
       contacts: [
@@ -82,17 +87,28 @@ const ServicesList = () => {
         },
       ],
     },
+    {
+      img: '#icon-loader-truck',
+      alt: 'trawl',
+      title: t('trawlTransportation'),
+      contacts: [
+        {
+          telLink: 'tel:+380679667453',
+          telNumb: '+38 (067) 966-74-53',
+        },
+      ],
+    },
   ];
 
   return (
-    <ServListCont>
+    <div>
       <ServList ref={ref}>
         {services.map((service, index) => (
           <ServItem key={index} className={`${inView ? 'visible' : ''}`}>
             <ServImgCont>
-              <picture>
-                <img src={service.img} alt={service.alt} height="160px" />
-              </picture>
+              <svg width="160" height="48">
+                <use href={sprite + service.img} />
+              </svg>
             </ServImgCont>
             <ServTitles>{service.title}</ServTitles>
             <ContactsList>
@@ -107,26 +123,7 @@ const ServicesList = () => {
           </ServItem>
         ))}
       </ServList>
-      {/* <ServList ref={ref}>
-        {services.map(service => (
-          <ServItem key={service.id}>
-            <ServImgCont className={`${inView ? 'visible' : ''}`}>
-              <SvgSelector id={service.id} />
-            </ServImgCont>
-            <ServTitles>{service.title}</ServTitles>
-            <ContactsList>
-              {service.contacts.map((contact, index) => (
-                <ContactsItem key={index}>
-                  <ContactsLink href={contact.telLink}>
-                    {contact.telNumb}
-                  </ContactsLink>
-                </ContactsItem>
-              ))}
-            </ContactsList>
-          </ServItem>
-        ))}
-      </ServList> */}
-    </ServListCont>
+    </div>
   );
 };
 

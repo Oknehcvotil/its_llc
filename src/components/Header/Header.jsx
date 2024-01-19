@@ -1,7 +1,7 @@
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
-import logo from '../../images/logo/logo.svg';
 import { Head, HeadCont, HeadOptions, LogoLink } from './Header.styled';
 import AddressList from '../AddressList/AddressList';
+import sprite from '../../images/icons/svg-sprite.svg'
 
 const Header = () => {
   const addresses = [
@@ -13,15 +13,9 @@ const Header = () => {
     <Head>
       <HeadCont>
         <LogoLink to="/">
-          <picture>
-            <img
-              src={logo}
-              width="84"
-              height="51"
-              loading="lazy"
-              alt="Import Transit Service LLC"
-            />
-          </picture>
+          <svg width="84" height="51">
+            <use href={sprite + '#icon-logo'} />
+          </svg>
         </LogoLink>
         <HeadOptions>
           <address>

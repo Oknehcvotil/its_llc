@@ -1,10 +1,5 @@
 import styled from '@emotion/styled';
 
-export const ServListCont = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const ServList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -21,7 +16,8 @@ export const ServList = styled.ul`
   }
 
   @media (min-width: 1200px) {
-    gap: 13px;
+    gap: 40px;
+    justify-content: center;
   }
 `;
 
@@ -75,22 +71,26 @@ export const ServItem = styled.li`
 
   @media (min-width: 1200px) {
     flex-basis: calc((100% - 40px) / 4);
-    transform: translateX(-1000%);
-    transition: all 800ms ease 300ms;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 
-    :nth-of-type(2) {
-      transform: translateX(-1000%);
-      transition: all 800ms ease 0ms;
+    :nth-of-type(4) {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     }
 
-    :nth-of-type(3) {
-      transform: translateX(1000%);
-      transition: all 800ms ease 0ms;
+    :nth-of-type(5) {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     }
 
     :last-child {
-      transform: translateX(1000%);
-      transition: all 800ms ease 300ms;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     }
   }
 
