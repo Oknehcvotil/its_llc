@@ -1,7 +1,6 @@
 import AddressList from 'components/AddressList/AddressList';
 import useResize from '../../hooks/useResize';
 import { Foot, FooterCont } from './Footer.styled';
-import logo from '../../images/logo/logo_main.svg';
 import { Link } from 'react-router-dom';
 import sprite from '../../images/icons/svg-sprite.svg';
 
