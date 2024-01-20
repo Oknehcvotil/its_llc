@@ -1,23 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import {
-  ServList,
-  ServItem,
-  ServImgCont,
-  ServTitles,
-  ContactsList,
-  ContactsItem,
-  ContactsLink,
-} from './ServicesList.styled';
-import { useInView } from 'react-intersection-observer';
-import sprite from '../../../images/icons/svg-sprite.svg';
+import { ServList } from './ServicesList.styled';
+import ServiceItem from '../ServiceItem/ServiceItem';
 
 const ServicesList = () => {
   const { t } = useTranslation();
-
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0,
-  });
 
   const services = [
     {
@@ -101,29 +87,15 @@ const ServicesList = () => {
   ];
 
   return (
-    <div>
-      <ServList ref={ref}>
-        {services.map((service, index) => (
-          <ServItem key={index} className={`${inView ? 'visible' : ''}`}>
-            <ServImgCont>
-              <svg width="160" height="48">
-                <use href={sprite + service.img} />
-              </svg>
-            </ServImgCont>
-            <ServTitles>{service.title}</ServTitles>
-            <ContactsList>
-              {service.contacts.map((contact, index) => (
-                <ContactsItem key={index}>
-                  <ContactsLink href={contact.telLink}>
-                    {contact.telNumb}
-                  </ContactsLink>
-                </ContactsItem>
-              ))}
-            </ContactsList>
-          </ServItem>
-        ))}
-      </ServList>
-    </div>
+    <ServList
+    >
+      {services.map((service, index) => (
+        <ServiceItem
+          index={index}
+          service={service}
+        />
+      ))}
+    </ServList>
   );
 };
 

@@ -1,15 +1,11 @@
-import { AdvList, AdvItem, ImgCont, AdvText } from './AdvancesList.styled';
-import { useTranslation } from 'react-i18next';
-import { useInView } from 'react-intersection-observer';
-import sprite from '../../../images/icons/svg-sprite.svg';
+import { AdvList } from './AdvancesList.styled';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+import AdvancesItem from '../AdvancesItem/AdvancesItem';
 
 const AdvancesList = () => {
-  const { t } = useTranslation();
-
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0,
-  });
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   const advantages = [
     { id: '#icon-small-truck', textKey: 'advCarPark' },
@@ -21,16 +17,7 @@ const AdvancesList = () => {
   return (
     <AdvList ref={ref}>
       {advantages.map((advantage, index) => (
-        <AdvItem key={index}>
-          <ImgCont className={`${inView ? 'visible' : ''}`}>
-            <svg width="64" height="64">
-              {advantage.id && <use href={sprite + advantage.id} />}
-            </svg>
-          </ImgCont>
-          <AdvText className={`${inView ? 'visible' : ''}`}>
-            {t(advantage.textKey)}
-          </AdvText>
-        </AdvItem>
+        <AdvancesItem index={index} advantage={advantage} inView={isInView} />
       ))}
     </AdvList>
   );

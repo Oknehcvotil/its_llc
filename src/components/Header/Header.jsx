@@ -1,7 +1,7 @@
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
-import { Head, HeadCont, HeadOptions, LogoLink } from './Header.styled';
+import { Head, HeadCont, HeadOptions } from './Header.styled';
 import AddressList from '../AddressList/AddressList';
-import sprite from '../../images/icons/svg-sprite.svg'
+import LogoLink from 'components/LogoLink/LogoLink';
 
 const Header = () => {
   const addresses = [
@@ -12,11 +12,12 @@ const Header = () => {
   return (
     <Head>
       <HeadCont>
-        <LogoLink to="/">
-          <svg width="84" height="51">
-            <use href={sprite + '#icon-logo'} />
-          </svg>
-        </LogoLink>
+          <LogoLink
+            width="84"
+            height="51"
+            iconName="#icon-logo"
+            header={true}
+          />
         <HeadOptions>
           <address>
             <AddressList addresses={addresses} />

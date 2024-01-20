@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import truck from '../../..//images/background/truck_L.jpg';
-import truckM from '../../../images/background/truck_M.jpg';
-import truckS from '../../../images/background/truck_S.jpg';
+import truck from '../../../assets/images/background/truck_L.jpg';
+import truckM from '../../../assets/images/background/truck_M.jpg';
+import truckS from '../../../assets/images/background/truck_S.jpg';
 
 export const Hero = styled.section`
   text-align: center;
@@ -51,23 +51,6 @@ export const HeroCont = styled.div`
 
   @media (min-width: 1200px) {
     max-width: 1158px;
-  }
-`;
-
-export const Tagline = styled.h1`
-  font-family: 'Calibri', sans-serif;
-  line-height: 1.3;
-  color: var(--secondary-color);
-  font-weight: 400;
-  letter-spacing: 0.5em;
-  text-align: center;
-  opacity: 0;
-  font-size: 44px;
-  margin-bottom: 40px;
-  animation: fadeIn 800ms ease forwards;
-
-  @media (min-width: 768px) {
-    margin-bottom: 60px;
   }
 `;
 

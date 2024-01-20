@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import uaFlag from '../../images/flags/ukraine-flag.png';
-import uaFlagGrey from '../../images/flags/ukraine-flag-grey.png';
-import enFlag from '../../images/flags/england-flag.png';
-import enFlagGrey from '../../images/flags/england-flag-grey.png';
+import uaFlag from '../../assets/images/flags/ukraine-flag.png';
+import uaFlagGrey from '../../assets/images/flags/ukraine-flag-grey.png';
+import enFlag from '../../assets/images/flags/england-flag.png';
+import enFlagGrey from '../../assets/images/flags/england-flag-grey.png';
 
 export const LanguageCont = styled.div`
   display: flex;

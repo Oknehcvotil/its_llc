@@ -1,8 +1,7 @@
 import AddressList from 'components/AddressList/AddressList';
 import useResize from '../../hooks/useResize';
 import { Foot, FooterCont } from './Footer.styled';
-import { Link } from 'react-router-dom';
-import sprite from '../../images/icons/svg-sprite.svg';
+import LogoLink from 'components/LogoLink/LogoLink';
 
 const Footer = () => {
   const addresses = [
@@ -17,11 +16,11 @@ const Footer = () => {
   return (
     <Foot>
       <FooterCont>
-        <Link to="/">
-          <svg width={isMobile ? 84 : 168} height={isMobile ? 51 : 102}>
-            <use href={sprite + '#icon-logo-main'} />
-          </svg>
-        </Link>
+        <LogoLink
+          width={isMobile ? 84 : 168}
+          height={isMobile ? 51 : 102}
+          iconName="#icon-logo-main"
+        />
         <AddressList addresses={addresses} footer={'footer_adress_list'} />
       </FooterCont>
     </Foot>

@@ -1,15 +1,17 @@
-import AdvancesList from "../AdvancesList/AdvancesList";
-import { AdvSect, AdvCont, AdvTitle } from "./AdvancesSection.styled";
-import { useTranslation } from "react-i18next";
-
+import Title from 'components/Title/Title';
+import AdvancesList from '../AdvancesList/AdvancesList';
+import { AdvSect, AdvCont } from './AdvancesSection.styled';
+import { useTranslation } from 'react-i18next';
 
 const AdvancesSection = () => {
-    const { t } = useTranslation();       
+  const { t } = useTranslation();
 
   return (
-      <AdvSect>
+    <AdvSect>
       <AdvCont>
-        <AdvTitle>{t("advTitle")}</AdvTitle>
+        <Title className={'advance_title'} level={2}>
+          {t('advTitle')}
+        </Title>
         <AdvancesList />
       </AdvCont>
     </AdvSect>
