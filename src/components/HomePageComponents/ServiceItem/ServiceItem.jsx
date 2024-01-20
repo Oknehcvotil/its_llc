@@ -30,7 +30,7 @@ const ServiceItem = ({ index, className, service }) => {
       variants={item}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
-      transition={{ delay: 0.2, ease: 'linear', duration: 0.4 }}
+      transition={{ease: 'linear', duration: 0.4 }}
       ref={ref}
     >
       <ServImgCont>
