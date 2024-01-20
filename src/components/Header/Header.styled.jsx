@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
 
 export const Head = styled.header`
   background-color: var(--head-bcg);
@@ -29,14 +28,5 @@ export const HeadOptions = styled.div`
 
   @media (min-width: 768px) {
     gap: 30px;
-  }
-`;
-
-export const LogoLink = styled(Link)`
-  transition: transform 500ms ease;
-
-  :hover,
-  :focus {
-    transform: scale(1.05);
   }
 `;
