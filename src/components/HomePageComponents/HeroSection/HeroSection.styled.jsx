@@ -9,7 +9,7 @@ export const Hero = styled.section`
   padding-top: 72px;
   padding-bottom: 40px;
   max-width: 1440px;
-  min-height: 432px;
+  min-height: 555px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)

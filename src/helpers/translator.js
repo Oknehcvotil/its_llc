@@ -1,8 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import uaTranslation from '../translations/ua.json';
-import enTranslation from '../translations/en.json';
+import uaTranslation from '../assets/translations/ua.json';
+import enTranslation from '../assets/translations/en.json';
 
 const savedLanguage = JSON.parse(localStorage.getItem('persist:language'));
 
