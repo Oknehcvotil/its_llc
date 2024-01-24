@@ -7,17 +7,6 @@ const ServicesList = () => {
 
   const services = [
     {
-      img: '#icon-ref',
-      alt: 'refrigerator',
-      title: t('refrigeratorTransportation'),
-      contacts: [
-        {
-          telLink: 'tel:+380679667453',
-          telNumb: '+38 (067) 966-74-53',
-        },
-      ],
-    },
-    {
       img: '#icon-tipper-truck',
       alt: 'grain',
       title: t('grainTransportation'),
@@ -25,6 +14,22 @@ const ServicesList = () => {
         {
           telLink: 'tel:+380679667453',
           telNumb: '+38 (067) 966-74-53',
+        },
+      ],
+    },
+
+    {
+      img: '#icon-tilt_truck',
+      alt: 'Tilt Truck',
+      title: t('tiltTransportation'),
+      contacts: [
+        {
+          telLink: 'tel:+380679663681',
+          telNumb: '+38 (067) 966-36-81',
+        },
+        {
+          telLink: 'tel:+380679663615',
+          telNumb: '+38 (067) 966-36-15',
         },
       ],
     },
@@ -59,17 +64,13 @@ const ServicesList = () => {
       ],
     },
     {
-      img: '#icon-tilt_truck',
-      alt: 'Tilt Truck',
-      title: t('tiltTransportation'),
+      img: '#icon-ref',
+      alt: 'refrigerator',
+      title: t('refrigeratorTransportation'),
       contacts: [
         {
-          telLink: 'tel:+380679663681',
-          telNumb: '+38 (067) 966-36-81',
-        },
-        {
-          telLink: 'tel:+380679663615',
-          telNumb: '+38 (067) 966-36-15',
+          telLink: 'tel:+380679667453',
+          telNumb: '+38 (067) 966-74-53',
         },
       ],
     },
