@@ -63,7 +63,11 @@ export const WelcomText = styled.p`
   letter-spacing: 0.02em;
   margin-bottom: 30px;
   animation: fadeInText 1200ms ease forwards;
-  text-align: left;
+  text-align: justify;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const AboutText = styled.p`
@@ -72,7 +76,11 @@ export const AboutText = styled.p`
   line-height: 1.5;
   letter-spacing: 0.02em;
   animation: fadeInText 1200ms ease forwards;
-  text-align: left;
+  text-align: justify;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const CompName = styled.strong`
