@@ -26,12 +26,14 @@ export const Hero = styled.section`
       ),
       url(${truckM});
 
-    padding-top: 128px;
+    padding-top: 100px;
     padding-bottom: 60px;
-    min-height: 600px;
+    min-height: 535px;
   }
 
   @media (min-width: 1200px) {
+    padding-top: 220px;
+    min-height: 680px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
