@@ -26,12 +26,14 @@ export const Hero = styled.section`
       ),
       url(${truckM});
 
-    padding-top: 128px;
+    padding-top: 100px;
     padding-bottom: 60px;
-    min-height: 600px;
+    min-height: 535px;
   }
 
   @media (min-width: 1200px) {
+    padding-top: 220px;
+    min-height: 680px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -54,14 +56,27 @@ export const HeroCont = styled.div`
   }
 `;
 
+export const WelcomText = styled.p`
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  animation: fadeInText 1200ms ease forwards;
+  text-align: left;
+`;
+
 export const AboutText = styled.p`
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   animation: fadeInText 1200ms ease forwards;
+  text-align: left;
 `;
 
 export const CompName = styled.strong`
   color: var(--secondary-color);
 `;
+
+

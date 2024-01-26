@@ -1,7 +1,8 @@
 {
   "aboutTitle": "About our company:",
-  "companyName": "IMPORT TRANSIT SERVICE LLC ",
-  "aboutText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet cum, tenetur qui, tempore aspernatur dolorem commodi sint mollitia vitae dolore facere, consequatur obcaecati quod ipsa illum placeat cumque odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet cum, tenetur qui, tempore aspernatur dolorem commodi sint mollitia vitae dolore facere, consequatur obcaecati quod ipsa illum placeat cumque odio.",
+  "welcomText": "Welcome to {{companyName}} - Your Reliable Partner in the World of Auto Transportation!",
+  "companyName": "Import Transit Service",
+  "aboutText": "We are offering quality and reliable solutions for the transportation of goods throughout Ukraine and abroad. Our team of professionals is ready to handle any type of cargo with the utmost responsibility and attention to detail.",
   "advTitle": "Our Advantages",
   "advCarPark": "Our own fleet",
   "advPunctuality": "Punctuality",
