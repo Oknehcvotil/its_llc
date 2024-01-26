@@ -54,14 +54,27 @@ export const HeroCont = styled.div`
   }
 `;
 
+export const WelcomText = styled.p`
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  animation: fadeInText 1200ms ease forwards;
+  text-align: left;
+`;
+
 export const AboutText = styled.p`
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   animation: fadeInText 1200ms ease forwards;
+  text-align: left;
 `;
 
 export const CompName = styled.strong`
   color: var(--secondary-color);
 `;
+
+
