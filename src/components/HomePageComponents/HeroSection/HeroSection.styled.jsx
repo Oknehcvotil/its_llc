@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import truck from '../../../assets/images/background/truck_L.jpg';
-import truckM from '../../../assets/images/background/truck_M.jpg';
-import truckS from '../../../assets/images/background/truck_S.jpg';
+import truckS from '../../../assets/images/background/truckS.jpg';
+import truckL from '../../../assets/images/background/TruckL.jpg';
+import truckM from '../../../assets/images/background/truckM.jpg';
 
 export const Hero = styled.section`
   text-align: center;
@@ -9,36 +9,37 @@ export const Hero = styled.section`
   padding-top: 72px;
   padding-bottom: 40px;
   max-width: 1440px;
-  min-height: 555px;
+  min-height: 600px;
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+      rgba(46, 47, 66, 0.5),
+      rgba(46, 47, 66, 0.5)
     ),
     url(${truckS});
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 
   @media (min-width: 768px) {
+    background-size: center;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        rgba(46, 47, 66, 0.5),
+        rgba(46, 47, 66, 0.5)
       ),
       url(${truckM});
 
     padding-top: 100px;
     padding-bottom: 60px;
-    min-height: 535px;
+    min-height: 530px;
   }
 
   @media (min-width: 1200px) {
     padding-top: 220px;
     min-height: 680px;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        rgba(46, 47, 66, 0.5),
+        rgba(46, 47, 66, 0.5)
       ),
-      url(${truck});
+      url(${truckL});
   }
 `;
 
@@ -86,5 +87,3 @@ export const AboutText = styled.p`
 export const CompName = styled.strong`
   color: var(--secondary-color);
 `;
-
-
