@@ -11,8 +11,8 @@ export const Hero = styled.section`
   max-width: 1440px;
   min-height: 600px;
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.5),
-      rgba(46, 47, 66, 0.5)
+      rgba(46, 47, 66, 0.6),
+      rgba(46, 47, 66, 0.6)
     ),
     url(${truckS});
   background-repeat: no-repeat;
@@ -22,8 +22,8 @@ export const Hero = styled.section`
   @media (min-width: 768px) {
     background-size: center;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.5),
-        rgba(46, 47, 66, 0.5)
+        rgba(46, 47, 66, 0.6),
+        rgba(46, 47, 66, 0.6)
       ),
       url(${truckM});
 
@@ -36,8 +36,8 @@ export const Hero = styled.section`
     padding-top: 220px;
     min-height: 680px;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.5),
-        rgba(46, 47, 66, 0.5)
+        rgba(46, 47, 66, 0.6),
+        rgba(46, 47, 66, 0.6)
       ),
       url(${truckL});
   }
