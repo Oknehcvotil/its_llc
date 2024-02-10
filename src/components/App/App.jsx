@@ -3,7 +3,7 @@ import Layout from '../Layout/Layout';
 import { useTranslation } from 'react-i18next';
 import { lazy, useEffect } from 'react';
 
-const HomePage = lazy(() => import('../../pages/HomePage'));
+const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
 
 const App = () => {
   const { t, i18n } = useTranslation();
