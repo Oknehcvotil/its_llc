@@ -1,8 +1,7 @@
 {
   "name": "its_llc",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://Oknehcvotil.github.io/its_llc/",
+  "private": false,
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@fontsource/montserrat": "^5.0.8",
