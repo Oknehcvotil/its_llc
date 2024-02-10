@@ -1,17 +1,20 @@
 import { EnBtn, LanguageCont, UaBtn } from './LanguageSwitch.styled';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectLanguage } from '../../redux/languageSlice/selector';
-import { setLanguage } from '../../redux/languageSlice/languageSlice';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 
 const LanguageSwitch = () => {
-  const language = useSelector(selectLanguage);
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { language } = useParams();
   const { i18n } = useTranslation();
 
   const handleLanguageChange = selectedLanguage => {
-    dispatch(setLanguage(selectedLanguage));
+    const newPath = location.pathname.replace(
+      `/${i18n.language}`,
+      `/${selectedLanguage}`
+    );
+    navigate(newPath);
   };
 
   useEffect(() => {

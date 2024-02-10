@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100%;
   font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,6 +84,16 @@ button {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .hero_title {

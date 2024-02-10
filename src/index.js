@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/fonts/Caveat-VariableFont_wght.ttf';
 import './index.css';
-import App from './components/App';
+import App from './components/App/App';
 import { Provider } from 'react-redux';
 import { store, persistor } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
