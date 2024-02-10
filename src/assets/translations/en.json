@@ -20,6 +20,8 @@
   "tankerTruks": "Tanker Transportation",
   "tarpauTruks": "Tarpaulin Transportation",
   "containerTruks": "Container Transportation",
+  "airTransportaiton": "Air Transportaiton",
+  "multimodalTransportaiton": "Multimodal Transportaiton",
   "locationName": "Odesa, Ukraine",
   "fleetTitle": "Our Fleet",
   "characteristics": "Characteristics",

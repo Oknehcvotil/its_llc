@@ -85,16 +85,34 @@ const ServicesList = () => {
         },
       ],
     },
+    {
+      img: '#icon-plane',
+      alt: 'plane',
+      title: t('airTransportaiton'),
+      contacts: [
+        {
+          telLink: 'tel:+380505882628',
+          telNumb: '+38 (050) 588-26-28',
+        },
+      ],
+    },
+    {
+      img: '#icon-vessle',
+      alt: 'vessle',
+      title: t('multimodalTransportaiton'),
+      contacts: [
+        {
+          telLink: 'tel:+380505882628',
+          telNumb: '+38 (050) 588-26-28',
+        },
+      ],
+    },
   ];
 
   return (
-    <ServList
-    >
+    <ServList>
       {services.map((service, index) => (
-        <ServiceItem
-          index={index}
-          service={service}
-        />
+        <ServiceItem index={index} service={service} />
       ))}
     </ServList>
   );
