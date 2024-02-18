@@ -17,7 +17,7 @@ const AdvancesList = () => {
   return (
     <AdvList ref={ref}>
       {advantages.map((advantage, index) => (
-        <AdvancesItem index={index} advantage={advantage} inView={isInView} />
+        <AdvancesItem key={index} advantage={advantage} inView={isInView} />
       ))}
     </AdvList>
   );

@@ -112,7 +112,7 @@ const ServicesList = () => {
   return (
     <ServList>
       {services.map((service, index) => (
-        <ServiceItem index={index} service={service} />
+        <ServiceItem key={index} service={service} />
       ))}
     </ServList>
   );

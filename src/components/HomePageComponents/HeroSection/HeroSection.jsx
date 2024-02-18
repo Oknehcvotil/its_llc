@@ -14,6 +14,7 @@ const HeroSection = () => {
   const welcomeText = t('welcomText');
   const companyName = t('companyName');
   const aboutText = t('aboutText');
+  const ourTeam = t('ourTeam');
 
   return (
     <Hero>
@@ -30,7 +31,11 @@ const HeroSection = () => {
             welcomeText
           )}
         </WelcomText>
-        <AboutText>{aboutText}</AboutText>
+        <AboutText>
+          {aboutText}
+          <br />
+          {ourTeam}
+        </AboutText>
       </HeroCont>
     </Hero>
   );

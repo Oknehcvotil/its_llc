@@ -9,7 +9,7 @@ import {
   ContactsList,
 } from './ServiceItem.styled';
 
-const ServiceItem = ({ index, className, service }) => {
+const ServiceItem = ({  className, service }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -25,12 +25,11 @@ const ServiceItem = ({ index, className, service }) => {
 
   return (
     <ServItem
-      key={index}
       className={className}
       variants={item}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
-      transition={{ease: 'linear', duration: 0.4 }}
+      transition={{ ease: 'linear', duration: 0.4 }}
       ref={ref}
     >
       <ServImgCont>
@@ -43,7 +42,7 @@ const ServiceItem = ({ index, className, service }) => {
 
       <ContactsList>
         {contacts.map(({ telLink, telNumb }, index) => (
-          <ServiceContacts index={index} telLink={telLink} telNumb={telNumb} />
+          <ServiceContacts key={index} telLink={telLink} telNumb={telNumb} />
         ))}
       </ContactsList>
     </ServItem>

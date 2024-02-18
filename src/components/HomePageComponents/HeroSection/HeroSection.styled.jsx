@@ -33,7 +33,7 @@ export const Hero = styled.section`
   }
 
   @media (min-width: 1200px) {
-    padding-top: 220px;
+    padding-top: 180px;
     min-height: 680px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.6),
@@ -68,6 +68,12 @@ export const WelcomText = styled.p`
 
   @media (min-width: 768px) {
     text-align: left;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 30px;
   }
 `;
 
