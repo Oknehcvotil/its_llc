@@ -14,7 +14,7 @@ const copy = {
     navProcess: 'Як працюємо',
     navContacts: 'Контакти',
     call: 'Зателефонувати',
-    eyebrow: 'Логістика без зайвих складнощів',
+    eyebrow: 'CARRY ON CARRY ALL',
     heroTitle: 'Перевезення, на які можна покластися.',
     heroAccent: 'В Україні та за кордоном.',
     heroLead:
@@ -73,7 +73,7 @@ const copy = {
     navProcess: 'How it works',
     navContacts: 'Contacts',
     call: 'Call us',
-    eyebrow: 'Logistics without unnecessary complexity',
+    eyebrow: 'CARRY ON CARRY ALL',
     heroTitle: 'Transportation you can rely on.',
     heroAccent: 'Across Ukraine and beyond.',
     heroLead:
