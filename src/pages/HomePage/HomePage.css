@@ -184,6 +184,12 @@
   color: #f6a394;
 }
 
+.rb-hero .rb-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
 .rb-eyebrow__line {
   width: 36px;
   height: 1px;
@@ -485,14 +491,22 @@
 }
 
 .rb-advantage-card__icon {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 46px;
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 38px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
 }
 
 .rb-advantage-card__icon svg {
   width: 100%;
   height: 100%;
+  filter: brightness(0) invert(1);
+  opacity: 0.94;
 }
 
 .rb-advantage-card h3 {
@@ -821,6 +835,11 @@
   .rb-eyebrow {
     margin-bottom: 18px;
     font-size: 10px;
+  }
+
+  .rb-hero .rb-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.17em;
   }
 
   .rb-eyebrow__line {
